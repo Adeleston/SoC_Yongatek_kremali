@@ -14,7 +14,9 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 MAKEFLAGS+=--warn-undefined-variables
-
+CARAVEL_NAME ?= caravel
+CARAVEL_TAG ?= 2024.09.13-1
+CARAVEL_REPO ?= https://github.com/efabless/caravel
 export CARAVEL_ROOT?=$(PWD)/caravel
 export UPRJ_ROOT?=$(PWD)
 PRECHECK_ROOT?=${HOME}/mpw_precheck
